@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Ana Beatriz Silva — Blog</title>
+  <subtitle>Notes on data analysis, the tools I use, and what I'm learning along the way.</subtitle>
+  <link href="https://www.anabsilva.com/blog/" rel="alternate" type="text/html"/>
+  <link href="https://www.anabsilva.com/blog/feed.xml" rel="self" type="application/atom+xml"/>
+  <id>https://www.anabsilva.com/blog/</id>
+  <updated>2026-09-30T08:00:00Z</updated>
+  <author>
+    <name>Ana Beatriz Silva</name>
+    <uri>https://www.anabsilva.com/</uri>
+  </author>
+  <!-- ✏️ NEW ENTRIES GO HERE (newest first). Also bump <updated> above to
+       the date of the newest post. Example:
+  <entry>
+    <title>Post Title</title>
+    <link href="https://www.anabsilva.com/blog/your-slug.html" rel="alternate" type="text/html"/>
+    <id>https://www.anabsilva.com/blog/your-slug.html</id>
+    <published>2026-10-15T08:00:00Z</published>
+    <updated>2026-10-15T08:00:00Z</updated>
+    <summary>One to two sentence summary of the post.</summary>
+  </entry>
+  -->
+</feed>
