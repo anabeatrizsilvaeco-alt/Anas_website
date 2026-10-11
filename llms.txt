@@ -1,0 +1,30 @@
+# Ana Beatriz Silva
+
+> Data Analyst based in Ireland. SQL, Python, and BI dashboards — turning raw data into decisions teams can act on.
+
+## About
+
+Personal website of Ana Beatriz Silva, Data Analyst. Covers data analysis, reporting, data visualisation, and hands-on
+data projects. Based in Ireland and open to roles nationwide.
+
+## Sections
+
+- [Home](https://www.anabsilva.com/): About, areas of expertise, and certifications.
+- [Portfolio](https://www.anabsilva.com/portfolio/): Data projects with code, descriptions, and screenshots.
+- [Blog](https://www.anabsilva.com/blog/): Notes on data analysis, tooling, and lessons learned.
+
+## Areas of expertise
+
+- Data analysis and reporting (SQL, Excel, KPIs)
+- Dashboards and data visualisation (Power BI, Tableau, Looker Studio)
+- Python and data wrangling (pandas, Jupyter, data cleaning)
+- Databases and data quality (PostgreSQL, MySQL, data modelling, ETL)
+
+## Links
+
+- [Homepage](https://www.anabsilva.com/)
+- [Portfolio](https://www.anabsilva.com/portfolio/)
+- [Blog](https://www.anabsilva.com/blog/)
+- [RSS Feed](https://www.anabsilva.com/blog/feed.xml)
+- [LinkedIn](https://www.linkedin.com/in/anabeatrizsilvaa/)
+- [GitHub](https://github.com/anabeatrizsilvaeco-alt)
