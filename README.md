@@ -1,25 +1,28 @@
 # anabsilva.com
 
-Personal website of Ana Beatriz Silva, Data Analyst.
+Personal website of Ana Beatriz Silva — Strategy & Analytics professional based in Ireland.
 
 🌐 **[www.anabsilva.com](https://www.anabsilva.com/)**
 
+## About the site
+
+A minimal, fast personal site built to showcase Ana's work and background as a data analyst with experience across financial services, operations, risk, and BI. No frameworks, no build step — just HTML, CSS, and a small amount of vanilla JavaScript.
+
 ## Tech stack
 
-- **Stack**: plain HTML, CSS, and JavaScript. No build step, no dependencies.
+- **Stack**: plain HTML, CSS, and JavaScript. No dependencies, no build step.
 - **Fonts**: Cormorant Garamond + DM Sans, loaded from Google Fonts.
-- **Hosting**: Vercel (`vercel.json` holds the security headers), or GitHub Pages
-  via `.github/workflows/static.yml`. Pick one and delete the other.
+- **Hosting**: Vercel (`vercel.json` holds the security headers and cache rules).
 
 ## Structure
 
 ```
-index.html              Home — hero, about, expertise, certifications, connect
+index.html              Home — hero, about, expertise, certifications,
+                        volunteering, connect
                         (all CSS is inline in the <style> block)
 portfolio/
   index.html            Project list
   portfolio.css
-  images/               Screenshots and GIFs for project cards
 blog/
   index.html            Post list
   blog.css              Shared by the list and the posts
@@ -27,21 +30,34 @@ blog/
   feed.xml              Atom feed, maintained by hand
 assets/
   images/               profile.jpg, og-default.jpg (link preview card)
-  img/favicons/         AB monogram, every size
+  img/favicons/         Favicon set — SVG, PNG at every standard size
 ```
+
+## Pages
+
+| Page | Path | What's on it |
+|---|---|---|
+| Home | `/` | Hero, About, Expertise, Certifications & Education, Volunteering, Connect |
+| Portfolio | `/portfolio/` | Project cards — add one per project |
+| Blog | `/blog/` | Post list + Atom feed |
 
 ## How to edit
 
+### Update the About or Hero copy
+
+Everything is in `index.html`. The CSS tokens (colours, fonts, spacing) are in the `:root` block at the top of the `<style>` tag. The colour palette is a soft blush pink — `--bg: #FEF0EE`, `--bg-alt: #FADDD8`, accent `--accent: #9E3F55`.
+
+### Add a certification or education entry
+
+Open `index.html` and find the `<!-- ── CERTIFICATIONS -->` section. Copy an existing `.cert-item` block and update the name, issuer, date, and status class (`is-earned` or `is-progress`).
+
+### Add a volunteering entry
+
+Find the `<!-- ── VOLUNTEERING -->` section in `index.html`. Same structure as certifications — copy a `.cert-item` and fill in the details.
+
 ### Add a project
 
-Open `portfolio/index.html` and follow the `✏️` comment: uncomment the
-`<section class="project-grid">` and copy one `.project-card` per project.
-Newest goes on top. Drop the screenshot in `portfolio/images/`.
-
-### Add a certification
-
-Open `index.html`, find the Certifications section, delete the `.empty-state`
-block and uncomment the `.cert-grid` beneath it.
+Open `portfolio/index.html` and follow the `✏️` comment: uncomment the project grid and copy one `.project-card` per project. Newest goes on top.
 
 ### Publish a blog post
 
@@ -53,22 +69,14 @@ block and uncomment the `.cert-grid` beneath it.
 
 ## Things to keep in mind
 
-- **The colours live in one place per file.** Each of `index.html`,
-  `portfolio/portfolio.css`, and `blog/blog.css` starts with the same `:root`
-  token block. Change a colour in all three or they drift apart.
-- **The CSP in `vercel.json` is strict.** `img-src` is `'self' data:`, so an
-  image hosted somewhere else will be blocked until you add its domain. Same
-  for any third-party script or embed.
-- **`.well-known/security.txt` expires 2027-09-30.** A GitHub Action opens a
-  reminder issue each August. It currently lists only a LinkedIn contact —
-  add an email.
-- **Set up Google Analytics** by uncommenting the GA4 block in the `<head>` of
-  each page and dropping in the measurement ID.
+- **Colours live in one place per file.** `index.html`, `portfolio/portfolio.css`, and `blog/blog.css` each have the same `:root` token block. Change a colour in all three or they drift apart.
+- **The CSP in `vercel.json` is strict.** `img-src` is `'self' data:`, so images hosted elsewhere will be blocked until you add their domain. Same for any third-party script or embed.
+- **`.well-known/security.txt` expires 2027-09-30.** A GitHub Action opens a reminder issue each August. It currently lists only a LinkedIn contact — add an email when ready.
+- **Google Analytics** is set up but inactive. Uncomment the GA4 block in the `<head>` of each page and add your measurement ID.
 
 ## To do
 
-- [ ] Rewrite the About and Expertise copy — the text in place is a draft
-      written from the job title alone.
-- [ ] Add an email to `.well-known/security.txt`.
 - [ ] Add the first portfolio project.
-- [ ] Point the `anabsilva.com` DNS at the host.
+- [ ] Connect the `anabsilva.com` domain DNS to Vercel.
+- [ ] Add an email to `.well-known/security.txt`.
+- [ ] Set up Google Analytics measurement ID.
